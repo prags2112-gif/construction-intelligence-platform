@@ -10,7 +10,7 @@ st.markdown('<div class="hero"><h1>🏗️ Multimodal Construction Intelligence 
 with st.sidebar:
     st.header("⚙️ AI Settings")
     api_key = st.secrets.get("GEMINI_API_KEY", "")
-    model = st.text_input("Gemini model", value="gemini-2.0-flash", help="Use a model available to your Gemini account; model availability changes.")
+    model = st.text_input("Gemini model", value="gemini-2.5-flash", help="Use a model available to your Gemini account; model availability changes.")
     st.caption('AI mode' if api_key else '🟡 Demonstration mode — no image recognition is performed')
     st.info('Safety assessments and cost estimates are informational, not a replacement for certified engineers, site inspectors, or local compliance checks.')
 
