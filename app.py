@@ -8,9 +8,9 @@ st.markdown('''<style>.block-container{padding-top:1.4rem;max-width:1250px}.stMe
 st.markdown('<div class="hero"><h1>🏗️ Multimodal Construction Intelligence Platform</h1><p>AI-powered safety • Structural diagnostics • Project planning • Site advisory</p></div>',unsafe_allow_html=True)
 
 with st.sidebar:
-    st.header('⚙️ AI Settings')
-   api_key = st.secrets.get("GEMINI_API_KEY", "")
-    model=st.text_input('Gemini model',value='gemini-2.0-flash',help='Use a model available to your Gemini account; model availability changes.')
+    st.header("⚙️ AI Settings")
+    api_key = st.secrets.get("GEMINI_API_KEY", "")
+    model = st.text_input("Gemini model", value="gemini-2.0-flash", help="Use a model available to your Gemini account; model availability changes.")
     st.caption('AI mode' if api_key else '🟡 Demonstration mode — no image recognition is performed')
     st.info('Safety assessments and cost estimates are informational, not a replacement for certified engineers, site inspectors, or local compliance checks.')
 
